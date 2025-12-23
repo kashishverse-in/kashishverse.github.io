@@ -3,10 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <title>The 7th-Floor Mystery | KashishVerse</title>
-  <meta name="description" content="Full immersive story by Kashish about a mysterious 7th-floor flat and strange rooftop visitors.">
+  <meta name="description" content="Full immersive story by Kashish about a mysterious 7th-floor flat and strange rooftop visitors, with a hidden secret chapter for curious readers.">
   <meta name="author" content="Kashish Batheja">
   <link rel="canonical" href="https://kashishverse-in.github.io/kashishverse/stories/full-story.html">
   <link rel="stylesheet" href="../style.css">
+  <style>
+    /* Optional inline CSS for secret elements */
+    .secret {
+      cursor: pointer;
+      color: #555;
+      transition: color 0.3s;
+    }
+    .secret:hover {
+      color: #ff5500;
+    }
+    #hidden-message {
+      display: none;
+      margin-top: 15px;
+      padding: 10px;
+      background-color: #f0f0f0;
+      border-left: 4px solid #ff5500;
+    }
+  </style>
 </head>
 
 <body>
@@ -30,13 +48,76 @@
     <h1>The 7th-Floor Mystery</h1>
     <p><time datetime="2025-12">December 2025</time></p>
 
-    <p>When we bought our 7th-floor flat in that old building, we couldn't believe our luck. The price was ridiculously low, and while the place had a few creaks and cracks, it felt like a bargain...</p>
-    
-    <p>The building itself was unremarkable—dull, worn-out structure with an elevator that groaned as it moved and a staircase at the end of the hallway that led to the basement and rooftop...</p>
+    <p>
+      When we bought our 7th-floor flat in that old building, we couldn't believe our luck. The price was ridiculously low, and while the place had a few creaks and cracks, it felt like a bargain. My parents called it "destiny," but something about it always felt... off.
+    </p>
 
-    <p>[Continue all story paragraphs here, preserving suspense, formatting with <p> tags]</p>
+    <p>
+      The building itself was unremarkable — a dull, worn-out structure with an elevator that groaned as it moved and a staircase at the end of the hallway that led to the basement and rooftop. My family rarely used it, but I noticed something strange early on: every evening, the rooftop would come alive with people.
+    </p>
 
-    <p>Even now, I wonder: what would have happened if I had stayed in that house? What did the future version of me want? I may never know. All I know is that some doors are meant to stay closed—and some truths are better left undiscovered.</p>
+    <p>
+      They weren't residents — I knew that much. Their faces were unfamiliar, and I had never seen anyone go upstairs. Yet, without fail, at around 6:30 PM, they would appear. It wasn't just their presence that unnerved me, but the rooftop itself. One day, curiosity pushed me to see what was happening up there.
+    </p>
+
+    <p>
+      The sight was surreal. The rooftop was fitted with sleek, glowing gadgets that looked years ahead of their time. Metallic panels covered parts of the floor, emitting a faint hum. Small, hovering drones patrolled the area silently, and strange machines stood at the corners, their purposes a mystery.
+    </p>
+
+    <p>
+      The visitors barely noticed me. They talked amongst themselves, some staring out at the horizon, others inspecting the gadgets. It felt like I had stepped into another world, one I didn't belong to.
+    </p>
+
+    <p>
+      But that was only the beginning.
+    </p>
+
+    <p>
+      One lazy afternoon, while cleaning the rarely-used back side of the apartment, I noticed a crack in the wallpaper. Pulling at it revealed a hidden door, its hinges rusted with age. Behind it was a narrow, spiraling staircase.
+    </p>
+
+    <p>
+      At first, I thought it led to a forgotten part of the building, but when I reached the bottom, I found two doors. They were old and wooden, with single words carved into them: Past and Future.
+    </p>
+
+    <p>
+      Something about the doors terrified me, but I couldn't stop myself. I pushed open the door labeled <strong>Past</strong>. The world beyond felt heavy with nostalgia. It was a house — our house — but not the one we lived in now...
+    </p>
+
+    <p>
+      Upstairs, I heard voices. Familiar voices. My hands trembled as I stood frozen in the doorway. I didn't dare go further. I turned and ran back to the hidden staircase, slamming the door behind me.
+    </p>
+
+    <p>
+      The other door, <strong>Future</strong>, was even more unsettling. The house beyond it was cold and unfamiliar. The walls were painted in muted shades of gray, and the furniture was sleek but lifeless. An unnatural silence filled the air.
+    </p>
+
+    <p>
+      And then, I heard it: a low, raspy voice, eerily familiar. It sent chills down my spine. The words echoed, growing louder, as if coming from every corner of the house:
+      <span class="secret" onclick="revealSecret(this)">"I've been waiting for you..." ◉</span>
+    </p>
+
+    <p>
+      I turned, expecting to see someone—or something—but there was no one. My fear turned into panic as the voice grew sharper, almost angry: "Don't run!"
+    </p>
+
+    <p>
+      I bolted. My feet carried me up the hidden staircase faster than I thought possible. I slammed the wallpapered door shut behind me, breathing heavily.
+    </p>
+
+    <p>
+      That night, I couldn't sleep. The voice haunted me. Why did it feel so... familiar? Days later, I realized the voice wasn't just familiar — it was <em>mine</em>. The voice I heard in the Future wasn't a stranger's. It was me — an older version, warning, waiting, or trapped in another timeline.
+    </p>
+
+    <p>
+      Even now, I wonder: what would have happened if I had stayed in that house? Some doors are meant to stay closed — and some truths are better left undiscovered.
+    </p>
+
+    <!-- Hidden secret message revealed on click -->
+    <p id="hidden-message">
+      🎉 You discovered the secret! <a href="secret-chapter.html">Access the hidden chapter →</a>
+    </p>
+
   </article>
 
   <nav style="margin-top:40px;text-align:center;">
@@ -44,6 +125,13 @@
   </nav>
 
 </main>
+
+<script>
+function revealSecret(el){
+  el.style.color = "#ff5500";
+  document.getElementById('hidden-message').style.display = 'block';
+}
+</script>
 
 <footer style="text-align:center;margin:60px 0;color:#666;">
   <p>© KashishVerse</p>
