@@ -1,169 +1,93 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <title>KashishVerse | Original Poetry by Kashish</title>
+body {
+  background-color: #0f0f0f;
+  color: #eaeaea;
+  font-family: "Georgia", "Times New Roman", serif;
+  line-height: 1.7;
+}
 
-  <meta name="description" content="KashishVerse is a personal poetry archive by Kashish featuring original poems on love, nature, humanity, childhood, silence, and self-reflection.">
-  <meta name="keywords" content="poetry, original poems, KashishVerse, Indian poetry, emotional poetry, modern poetry">
-  <meta name="author" content="Kashish Batheja">
+.site-header {
+  text-align: center;
+  padding: 40px 20px;
+  border-bottom: 1px solid #222;
+}
 
-  <!-- Google Verification -->
-  <meta name="google-site-verification" content="Loui8C1EpMApfjV6NCU4VxuM_0W1IcRDgw80EHBo3ck" />
+.site-header h1 {
+  font-size: 2.8rem;
+  letter-spacing: 2px;
+}
 
-  <link rel="stylesheet" href="style.css">
-</head>
+.tagline {
+  font-style: italic;
+  margin-top: 10px;
+  color: #aaa;
+}
 
-<body>
+.nav {
+  margin-top: 20px;
+}
 
-  <!-- HEADER -->
-  <header class="site-header">
-    <h1>KashishVerse</h1>
-    <p class="tagline">Words that stay when everything else leaves.</p>
+.nav a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 0.95rem;
+}
 
-    <nav class="nav">
-      <a href="index.html">Poetry</a>
-      <a href="stories.html">Stories</a>
-      <a href="essays.html">Essays</a>
-      <a href="library.html">Library</a>
-      <a href="quotes.html">Quotes</a>
-      <a href="archive.html">Archive</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+.nav a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
 
-  <!-- MAIN CONTENT -->
-  <main class="container">
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
 
-    <!-- POEM 1 -->
-    <section class="poem">
-      <img src="images/image1.jpg" alt="Poetry about abandoned animals">
-      <h2>For Every Animal Left Behind, a Piece of Humanity Is Lost</h2>
-      <p>
-        In the shadows they hide,<br>
-        With hunger deep inside.<br>
-        For in their innocent eyes,<br>
-        Lies a plea for love that never dies.
-      </p>
-    </section>
+.poem {
+  margin-bottom: 80px;
+}
 
-    <!-- POEM 2 -->
-    <section class="poem">
-      <img src="images/image2.jpg" alt="Poetry about childhood">
-      <h2>Don't Grow Up, It’s a Trap</h2>
-      <p>
-        As the sunlight touches my peepers,<br>
-        In childhood, we were dream seekers.<br>
-        Searching for life’s treasures far away,<br>
-        From the weight of adult pleasures.
-      </p>
-    </section>
+.poem img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
 
-    <!-- POEM 3 -->
-    <section class="poem">
-      <img src="images/image3.jpg" alt="Poetry about strength">
-      <h2>You Must Be Strong Enough to Protect Yourself</h2>
-      <p>
-        They say fear is our greatest weakness,<br>
-        Yet I have seen hate become someone’s appraiser,<br>
-        Judging souls as inadequate,<br>
-        Leaving scars where strength should gather.
-      </p>
-    </section>
+.poem h2 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
 
-    <!-- POEM 4 -->
-    <section class="poem">
-      <img src="images/image4.jpg" alt="Poetry about moon and ocean">
-      <h2>Bright as the Moon, Deep as the Ocean — Can You Feel It?</h2>
-      <p>
-        Beneath the moon’s soft, tender glow,<br>
-        Waves whisper secrets they long to show.<br>
-        In the shimmer of night, love finds its way,<br>
-        A blissful dance where hearts gently sway.
-      </p>
-    </section>
+.poem p {
+  font-size: 1.05rem;
+  white-space: normal;
+}
 
-    <!-- POEM 5 -->
-    <section class="poem">
-      <img src="images/image5.jpg" alt="Poetry about angels">
-      <h2>Do You Believe in Angels? I Do.</h2>
-      <p>
-        As the angel whispers in my ear,<br>
-        A sensation gentle and clear.<br>
-        Loving is a gift from the divine,<br>
-        Never let go of that sacred shine.
-      </p>
-    </section>
+.page-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
 
-    <!-- POEM 6 -->
-    <section class="poem">
-      <img src="images/image6.jpg" alt="Poetry about morning city">
-      <h2>In the Morning’s Quiet Embrace, a City Finds Its Gentle Pace</h2>
-      <p>
-        Nature’s beauty in this morning scene,<br>
-        A peaceful moment, calm and serene.<br>
-        As the world awakens, a new day begins,<br>
-        With the sun, the birds, and the city’s spins.
-      </p>
-    </section>
+.page-description {
+  color: #aaa;
+  margin-bottom: 40px;
+}
 
-    <!-- POEM 7 -->
-    <section class="poem">
-      <img src="images/image7.jpg" alt="Poetry about sky">
-      <h2>The Beauty of the Sky Always Leaves Me in Awe</h2>
-      <p>
-        The sky aglow with colors so bright,<br>
-        A breathtaking sight, pure delight.<br>
-        In harmony they dance and play,<br>
-        Capturing the soul of a brand-new day.
-      </p>
-    </section>
+.site-footer {
+  text-align: center;
+  padding: 30px;
+  border-top: 1px solid #222;
+  font-size: 0.9rem;
+  color: #777;
+}
 
-    <!-- POEM 8 -->
-    <section class="poem">
-      <img src="images/image8.jpg" alt="Poetry about mountains and water">
-      <h2>Amidst the Tranquil Waters and Whispering Mountains</h2>
-      <p>
-        Dreamy days and skies so wide,<br>
-        Boats and bubbles side by side.<br>
-        Come and join the gentle cheer,<br>
-        In a land so calm, so dear.
-      </p>
-    </section>
-
-    <!-- POEM 9 -->
-    <section class="poem">
-      <img src="images/image9.jpg" alt="Poetry about family">
-      <h2>Family Is Where the Heart Feels Home</h2>
-      <p>
-        In the silence where echoes softly dwell,<br>
-        There’s one who listens, never to tell.<br>
-        A haven of calm where fears dispel,<br>
-        Yet why orchids he keeps away, I cannot tell.
-      </p>
-    </section>
-
-    <!-- POEM 10 -->
-    <section class="poem">
-      <img src="images/image10.jpg" alt="Poetry about life">
-      <h2>Life Is a Garden, and Every Experience Is a Seed</h2>
-      <p>
-        As dawn’s first light caresses the snow,<br>
-        Mountains awaken with a gentle glow.<br>
-        A dance of light on rugged crest,<br>
-        Nature’s grand canvas at its very best.
-      </p>
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <p>© 2025 KashishVerse. All writings are original works by Kashish Batheja.</p>
-  </footer>
-
-</body>
-</html>
+a {
+  color: #9ad1ff;
+}
